@@ -4,7 +4,6 @@
     grid-gap: 20px; 
     justify-content: center; 
     align-items: center; 
-    padding: 20px;
     width: 100%; 
     margin: 0 auto; 
 }
@@ -15,4 +14,19 @@
     margin: 0 auto;
     align-items: center;
     height: 100vh;
+}
+
+.filter-bar {
+    /*background-color: #060b26;*/
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.filter-bar-left, .filter-bar-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 50px;
 }
