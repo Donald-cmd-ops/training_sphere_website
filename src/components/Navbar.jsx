@@ -28,7 +28,7 @@ function Navbar() {
           </div>
           <h1 className='montserrat-alternates-regular'>Training Sphere</h1>
           <div className='navbar-right'>
-            <Link to="Login" className='signup'>
+            <Link to="/login" className='signup'>
               <a>Login</a>
             </Link>
           </div>
