@@ -62,3 +62,6 @@ body {
     color: #555;
     cursor: pointer;
   }
+  .select-bar-div {
+    width: 0 auto;
+  }
