@@ -2,18 +2,12 @@ import './css/post_styles.css'
 function Post() {
     return (
         <>
-            <head>
-                <meta charSet="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>Post Workout</title>
-            </head>
             <body>
                 <div className='mainPostContainer'>
                     <div className="container1">
                         <form action="/submit-workout" method="post">
-                            <h1>Post Your Workout</h1>
-                            <h2>General Information</h2>
-                            <label htmlFor="sport">Sport/Activity Type</label>
+                            <h1>Training Program Description</h1>
+                            <label htmlFor="sport">Target Sport</label>
                             <select id="sport" name="sport" required>
                                 <option value="">Select a sport</option>
                                 <option value="running">Running</option>
@@ -23,7 +17,7 @@ function Post() {
                                 <option value="other">Other</option>
                             </select>
 
-                            <label htmlFor="title">Workout Title</label>
+                            <label htmlFor="title">Training Program Name</label>
                             <input
                                 type="text"
                                 id="title"
@@ -32,55 +26,12 @@ function Post() {
                                 required
                             />
 
-                            <div className="flex">
-                                <div>
-                                    <label htmlFor="date">Date</label>
-                                    <input type="date" id="date" name="date" required />
-                                </div>
-                                <div>
-                                    <label htmlFor="time">Time</label>
-                                    <input type="time" id="time" name="time" />
-                                </div>
-                            </div>
-
-                            <label htmlFor="duration">Duration (in minutes)</label>
-                            <input
-                                type="number"
-                                id="duration"
-                                name="duration"
-                                placeholder="Enter duration"
-                                min="1"
-                                required
-                            />
-
-                            <h2>Performance Metrics</h2>
-                            <label htmlFor="distance">
-                                Distance (in km) <span className="optional">(Optional for cardio activities)</span>
-                            </label>
-                            <input
-                                type="number"
-                                id="distance"
-                                name="distance"
-                                placeholder="Enter distance"
-                            />
-
-                            <label htmlFor="sets">
-                                Sets & Reps <span className="optional">(Optional for strength training)</span>
-                            </label>
-                            <input
-                                type="text"
-                                id="sets"
-                                name="sets"
-                                placeholder="E.g., 4 sets of 10 reps"
-                            />
-
-                            <h2>Description & Notes</h2>
-                            <label htmlFor="description">Workout Description</label>
+                            <label htmlFor="description">Training Program Description</label>
                             <textarea
                                 id="description"
                                 name="description"
                                 rows="4"
-                                placeholder="Provide details about your workout"
+                                placeholder="Provide details about your training program"
                                 required
                             ></textarea>
 
@@ -104,7 +55,7 @@ function Post() {
                         </form>
                     </div>
                     <div className='container2'>
-                        <h1>This is container 2</h1>
+                        <button type="button" className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Add Session</button>
                     </div>
                 </div >
 
