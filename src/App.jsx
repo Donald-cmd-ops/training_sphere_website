@@ -7,6 +7,7 @@ import ContactUs from './pages/ContactUs'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
+import Post from './pages/Post'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/post" element={<Post />} />
         </Routes>
       </Router>
     </>

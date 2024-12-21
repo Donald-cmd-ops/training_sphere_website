@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  .post-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    justify-items: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  button {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  .optional {
+    font-size: 0.9em;
+    color: #888;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .flex div {
+    flex: 1;
+  }
+  .upload-section {
+    background: #fff;
+    border: 1px dashed #bbb;
+    padding: 10px;
+    text-align: center;
+    color: #555;
+    cursor: pointer;
+  }
