@@ -1,7 +1,21 @@
 import './css/post_styles.css'
-function Post() {
-    const postThread = async () => {
+import { db, collection, addDoc } from '../firebase';
+import { useRef } from 'react';
 
+function Post() {
+
+    const nameRef = useRef(null);
+
+    const postThread = async () => {
+        const messageDocRef = collection(db, "threads");
+        await addDoc(messageDocRef, {
+            author: "placeholder",
+            targetSport: nameRef.current.value,
+            name: nameRef.current.value,
+            description: Math.floor(Date.now() / 1000),
+            goals: "Goals",
+            challenges: "Something"
+        });
     }
 
     return (
@@ -31,6 +45,7 @@ function Post() {
 
                             <label htmlFor="title">Training Program Name</label>
                             <input
+                                ref={nameRef}
                                 type="text"
                                 id="title"
                                 name="title"
