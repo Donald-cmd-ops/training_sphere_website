@@ -3,7 +3,12 @@ body {
     line-height: 1.6;
     margin: 20px;
   }
-  .post-container {
+  .mainPostContainer {
+    width: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .container1, .container2 {
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -11,6 +16,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     justify-items: center;
+    
   }
   h1 {
     text-align: center;
