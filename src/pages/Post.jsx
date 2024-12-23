@@ -1,6 +1,7 @@
 import './css/post_styles.css';
-import { db, collection, addDoc } from '../firebase';
+import { db } from '../firebase';
 import { useRef } from 'react';
+import { collection, addDoc } from 'firebase/firestore';
 
 function Post() {
     const sportRef = useRef(null);
