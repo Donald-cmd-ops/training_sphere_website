@@ -1,0 +1,37 @@
+class Thread {
+    constructor(data, id) {
+        this.author = data.author || "Unknown Author";
+        this.targetSport = data.targetSport || "Unknown Sport";
+        this.name = data.name || "Untitled";
+        this.description = data.description || "No description provided";
+        this.goals = data.goals || "No goals provided";
+        this.challenges = data.challenges || "No challenges provided";
+        this.id = id || null;
+    }
+
+    getAuthor() {
+        return this.author;
+    }
+
+    getTargetSport() {
+        return this.targetSport;
+    }
+
+    getName() {
+        return this.name;
+    }
+
+    getDescription() {
+        return this.description;
+    }
+
+    getGoals() {
+        return this.goals;
+    }
+
+    getChallenges() {
+        return this.challenges;
+    }
+}
+
+export default Thread;
